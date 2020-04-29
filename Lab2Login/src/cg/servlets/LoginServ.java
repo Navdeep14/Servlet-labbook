@@ -23,7 +23,7 @@ public class LoginServ extends HttpServlet {
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("password");
 
-		if (uname.equals("pranita") && pass.equals("password")) {
+		if (uname.equals("Navdeep") && pass.equals("password")) {
 			response.sendRedirect("Success.jsp");
 		} else {
 			response.sendRedirect("LoginForm.jsp?invalid=true");
