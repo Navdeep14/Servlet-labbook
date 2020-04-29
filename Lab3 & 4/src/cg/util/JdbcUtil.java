@@ -27,9 +27,9 @@ public class JdbcUtil {
 			// String url = properties.getProperty("db.url");
 			// String username = properties.getProperty("db.username");
 			// String password = properties.getProperty("db.password");
-			String url = "jdbc:oracle:thin:@10.51.103.201:1521:orcl11g";
+			String url = "jdbc:oracle:thin:@localhost:1521/orcl";
 			// Class.forName(driver);
-			connection = DriverManager.getConnection(url, "Lab1ctrg22", "lab1coracle");
+			connection = DriverManager.getConnection(url, "system", "1412");
 			// System.out.println("Connection Established");
 		return connection;
 	}
